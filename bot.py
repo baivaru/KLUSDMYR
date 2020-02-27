@@ -13,7 +13,7 @@ BOT.start()
 
 def send_rates():
     kl_rates = scrape()
-    full_message = "<b>Latest KL Exchange Rates</b>\n"
+    full_message = "<b>Latest KL Exchange Rates</b>\n\n"
     for kl_rate in kl_rates:
         name = kl_rate['name']
         rate = kl_rate['rate']
