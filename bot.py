@@ -17,7 +17,7 @@ def send_rates():
     for kl_rate in kl_rates:
         name = kl_rate['name']
         rate = kl_rate['rate']
-        message = f"<b>{name}</b> | {rate}\n"
+        message = f"<b>{name}</b>\n<code>{rate}</code>\n\n"
         full_message = full_message + message
     BOT.send_message(CHAT_ID, full_message)
 
